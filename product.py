@@ -6,9 +6,13 @@ class Product():
         self.base_price = base_price 
         self.tax_rate = tax_rate 
 
+    
     def get_total(self): 
         total = 0 
-        tax = self.tax_rate / 10 
+        tax = self.tax_rate / 100 
         total += self.base_price + tax 
         return total 
+
+
+ice = Product('ice', 10, 13)
 
